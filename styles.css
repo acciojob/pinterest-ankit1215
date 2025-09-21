@@ -1,1 +1,67 @@
-/*  your css code here. If applicable */
+/* Reset margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Container */
+.hero {
+  display: flex;                 /* required */
+  justify-content: center;       /* required */
+  align-items: center;           /* required */
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background Image */
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;       /* required */
+  height: 100%;      /* required */
+  object-fit: cover; /* required */
+  z-index: -1;
+}
+
+/* Hero Content */
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.hero-content .btn {
+  display: inline-block;
+  padding: 12px 24px;           /* required */
+  background-color: #e60023;    /* Pinterest red */
+  color: #fff;                  /* required */
+  border-radius: 30px;          /* required */
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background-color: #ad081b;
+}
